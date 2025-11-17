@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Books</title>
+</head>
+<body>
+
+<script>
+  const data = {
+    books: [
+      {
+        title: "The Great Gatsby",
+        author: "F. Scott Fitzgerald",
+        publicationYear: 1925,
+        genres: ["Fiction", "Classics"]
+      },
+      {
+        title: "To Kill a Mockingbird",
+        author: "Harper Lee",
+        publicationYear: 1960,
+        genres: ["Fiction", "Coming-of-Age"]
+      }
+    ]
+  };
+
+  console.log("Title of the first book:", data.books[0].title);
+
+  console.log("Author of the second book:", data.books[1].author);
+
+  console.log("Genres of all books:");
+  for (let i = 0; i < data.books.length; i++) {
+    console.log(data.books[i].genres);
+  }
+</script>
+
+</body>
+</html>
